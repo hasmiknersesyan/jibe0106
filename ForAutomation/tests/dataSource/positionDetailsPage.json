@@ -1,0 +1,10 @@
+{
+  "lblJobAlert": "Get future jobs matching this search",
+  "lblJobTitle": "Project Manager",
+  "lblLocations": "Locations:",
+  "lblFunctions": "Functions: ",
+  "lblJobDescription": "Job Description",
+  "alertSuccessMessage": "Your job alert was successfully created.",
+  "emailAlertErrorMessage": "Please enter a valid email.",
+  "btnApply": "Apply"
+}

@@ -1,0 +1,13 @@
+{
+  "pageElement": {
+    "searchInput": "//*[@class='keyword-search']//input[@type='text']",
+    "label1": "//*[@id='label-keywords']",
+    "lblSearchLocation": "//*[@id='label-location-search']",
+    "fieldSearchLocation": "//*[@class='location-search ui-location-typeahead']//input",
+    "locationSearchResult": "//*[contains(text(), 'Shanghai, China')][@id='job-location-0']",
+    "lblSortBy": "//*[@id='search-sort']/label",
+    "labelNoResult": "//*[@id='no-search-results']",
+    "searchButton": "//*[@class='search-btn']",
+    "resultPosition": ".//*[contains(text(), 'Senior Project Manager')]"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "pageElement": {
+    "searchInput": "//*[@class='keyword-search']//input[@type='text']",
+    "label1": "//*[@id='label-keywords']",
+    "lblSearchLocation": "//*[@id='label-location-search']",
+    "fieldSearchLocation": "//*[@class='location-search ui-location-typeahead']//input",
+    "locationSearchResult": "//*[contains(text(), 'Shanghai, China')][@id='job-location-0']",
+    "lblSortBy": "//*[@id='search-sort']/label",
+    "labelNoResult": "//*[@id='no-search-results']",
+    "searchButton": "//*[@class='search-btn']",
+
+    "resultPosition": ".//*[contains(text(), 'Senior Project Manager')]",
+
+    "lblJobAlert": "//*[@id='job-alerts-container']//label",
+    "lblJobTitle": "//*[@id='label-job-title']",
+    "lblLocations": "//*[@class='meta-data__label'][contains(text(), 'Locations:')]",
+    "lblFunctions": "//*[@class='meta-data__label'][contains(text(), 'Functions:')]",
+    "lblJobDescription": "//*[@class='job-description-header'][contains(text(), 'Job Description')]",
+
+    "lblConsentHeader": "//h1[@class='privacy-header-title']",
+    "lblInformationYouProvide": "//strong[contains(text(), 'Information You Provide')]",
+    "lblPassiveInformation": "//strong[contains(text(), 'Passive Information Collection and Use')]",
+    "lblThroughBrowser": "//strong[contains(text(), 'Through your browser:')]",
+    "lblUsingCookies": "//strong[contains(text(), 'Using cookies:')]",
+    "lblUsingFlashCookies": "//strong[contains(text(), 'Using Flash cookies')]",
+    "lblUsingPixel": "//strong[contains(text(), 'Using pixel tags, web beacons, ')]",
+    "lblOnlineAdv": "//strong[contains(text(), 'Online behavioral advertising:')]",
+
+
+
+    "applyButton": "//*[@id='link-apply']",
+    "fieldAlertEmail": "//*[@id='jibe-trackif-email']",
+    "getAlertButton": "//*[@id='jibe-trackif-button']",
+    "emailAlertErrorMessage": "//*[@id='jibe-trackif-error-noemail']",
+    "alertSuccessMessage": "//*[@id='jibe-trackif-success-process']",
+    "agreeButton": "//button[contains(text(), 'Agree')]",
+
+    "loginEmail": "//input[@placeholder='Email']",
+    "loginPassword": "//input[@placeholder='Password']",
+    "loginButton": "//button[@type='submit']",
+    "labelLogin": "//h1[text()='Login']",
+    "labelUploadCV": "//div/upload-component/div[1]/h2",
+    "loginErrorMessage": "//p[contains(text(), 'Please enter a valid email address.')]",
+
+    "labelFN": "//label[text()='First Name']",
+    "labelLN": "//label[text()='Last Name']",
+    "fieldFN": "//input[@autocomplete='given-name'']",
+    "fieldLN": "//input[@autocomplete='family-name']",
+    "fileUploadButton": "//flow-component//upload-component//local-upload//span",
+    "nextButton": "//*[@id='button-next-question']",
+    "question1": "//div/label[text()='Would you like to attach a cover letter?']",
+    "q1AnswerNo": "//div/label[contains(text(), 'No')]"
+  },
+  "componentMenu": {
+    "headerBody": "[class='Header-body']",
+    "headerButtons": "[class='Header-buttons']",
+    "menuButton": "[class='Header-menu-button toggleNav']",
+    "searchButton": "[class='Header-search-button toggleSearch']",
+    "countriesButton": "[class='Header-countries-button toggleCountries']",
+    "likeButton": "[class='Header-like-button toggleLike']",
+
+    "headerMenu": "[class=' Header-menu']",
+    "titleStories": "//*[@class='ListPromo-title'][contains(text(), 'Our Stories')]",
+    "titleCompanies": "//*[@class='ListPromo-title'][contains(text(), 'Our Company')]",
+    "searchInput": "[class = 'Header-search searchContainer searchVisible']",
+    "lblCountries": "//*[@class='CountriesMenu-title'][contains(text(), 'Explore more Johnson & Johnson sites:')]",
+    "ulCompanies": "//*[@class='ListPromo-items-item']//ul",
+    "titleMenuPages": "[class='ModuleTitle2-title-text']"
+  }
+
+}

@@ -1,0 +1,3 @@
+{
+  "emailValidation": ["admin", "admin1111111111", "epam.com", "AAAAAA@@AAAA", "#$%#%%"]
+}

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="3" tests="27" time="39.446">
+ <testsuite name="careers jnj automation sctipts" timestamp="2018-05-16T12:16:41" hostname="localhost" time="30.749" errors="0" tests="18" skipped="1" disabled="0" failures="1">
+  <testcase classname="careers jnj automation sctipts" name="index page UI elements checks" time="0.181" />
+  <testcase classname="careers jnj automation sctipts" name="should verify position search" time="1.678" />
+  <testcase classname="careers jnj automation sctipts" name="should verify location search" time="0">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="careers jnj automation sctipts" name="should verify position details page" time="4.894" />
+  <testcase classname="careers jnj automation sctipts" name="position details page UI elements checks" time="0.313" />
+  <testcase classname="careers jnj automation sctipts" name="should verify get_alert_field negative validation" time="0.583" />
+  <testcase classname="careers jnj automation sctipts" name="should verify get_alert_field negative validation" time="0.367" />
+  <testcase classname="careers jnj automation sctipts" name="should verify get_alert_field negative validation" time="0.362" />
+  <testcase classname="careers jnj automation sctipts" name="should verify get_alert_field negative validation" time="5.316">
+   <failure type="exception" message="Failed: Wait timed out after 5031ms"><![CDATA[TimeoutError: Wait timed out after 5031ms
+    at D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at ManagedPromise.invokeCallback_ (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+From: Task: <anonymous wait>
+    at scheduleWait (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:2188:20)
+    at ControlFlow.wait (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:2517:12)
+    at thenableWebDriverProxy.wait (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\webdriver.js:934:29)
+    at run (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\built\browser.js:59:33)
+    at ProtractorBrowser.to.(anonymous function) [as wait] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\built\browser.js:67:16)
+    at PositionDetailsPage._callee2$ (D:/EPAM/JnJ/JibeAutomation02/ForAutomation/objects/PageObjects/positionDetailsPage.js:28:23)
+    at tryCatch (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:303:22)
+    at Generator.prototype.(anonymous function) [as next] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\objects\PageObjects\positionDetailsPage.js:3:191)
+From: Task: Run it("should verify get_alert_field negative validation") in control flow
+    at UserContext.<anonymous> (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\jasminewd2\index.js:94:19)
+    at attempt (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at D:/EPAM/JnJ/JibeAutomation02/ForAutomation/tests/suites/applyJobTests.js:55:9
+    at D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\jasmine-data-provider\src\index.js:25:22
+    at Array.forEach (<anonymous>)
+    at D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\jasmine-data-provider\src\index.js:20:20
+    at Suite.<anonymous> (D:/EPAM/JnJ/JibeAutomation02/ForAutomation/tests/suites/applyJobTests.js:54:5)
+    at addSpecsToSuite (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:/EPAM/JnJ/JibeAutomation02/ForAutomation/tests/suites/applyJobTests.js:15:1)]]>
+   </failure>
+  </testcase>
+  <testcase classname="careers jnj automation sctipts" name="should verify get_alert_field negative validation" time="0.576" />
+  <testcase classname="careers jnj automation sctipts" name="should verify get_alert_field positive validation" time="0.995" />
+  <testcase classname="careers jnj automation sctipts" name="should verify position Details Page Apply button" time="4.02" />
+  <testcase classname="careers jnj automation sctipts" name="should verify login Page " time="0.314" />
+  <testcase classname="careers jnj automation sctipts" name="should verify login email field negative validation" time="0.752" />
+  <testcase classname="careers jnj automation sctipts" name="should verify login email field negative validation" time="0.507" />
+  <testcase classname="careers jnj automation sctipts" name="should verify login email field negative validation" time="0.401" />
+  <testcase classname="careers jnj automation sctipts" name="should verify login email field negative validation" time="0.423" />
+  <testcase classname="careers jnj automation sctipts" name="should verify login email field negative validation" time="0.386" />
+ </testsuite>
+ <testsuite name="Header menu test" timestamp="2018-05-16T12:17:12" hostname="localhost" time="8.697" errors="0" tests="9" skipped="0" disabled="0" failures="2">
+  <testcase classname="Header menu test" name="should check menu search" time="0.251" />
+  <testcase classname="Header menu test" name="should check menu countries" time="0.437" />
+  <testcase classname="Header menu test" name="should check menu items" time="3.452">
+   <failure type="exception" message="Failed: No element found using locator: By(link text, Innovation)"><![CDATA[NoSuchElementError: No element found using locator: By(link text, Innovation)
+    at elementArrayFinder.getWebElements.then (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\built\element.js:814:27)
+    at ManagedPromise.invokeCallback_ (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+    at ElementArrayFinder.applyAction_ (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as click] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as click] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\built\element.js:831:22)
+    at headerMenu._callee$ (D:/EPAM/JnJ/JibeAutomation02/ForAutomation/objects/components/headerMenu.js:54:24)
+    at tryCatch (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:303:22)
+    at Generator.prototype.(anonymous function) [as next] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\objects\components\headerMenu.js:3:191)
+    at D:\EPAM\JnJ\JibeAutomation02\ForAutomation\objects\components\headerMenu.js:3:437
+    at new Promise (<anonymous>)
+From: Task: Run it("should check menu items") in control flow
+    at UserContext.<anonymous> (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\jasminewd2\index.js:94:19)
+    at attempt (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:/EPAM/JnJ/JibeAutomation02/ForAutomation/tests/suites/headerMenuTests.js:23:5)
+    at addSpecsToSuite (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:/EPAM/JnJ/JibeAutomation02/ForAutomation/tests/suites/headerMenuTests.js:6:1)
+    at Module._compile (module.js:652:30)
+    at loader (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-register\lib\node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-register\lib\node.js:154:7)
+    at Module.load (module.js:565:32)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Header menu test" name="should check links About Companies" time="0.603" />
+  <testcase classname="Header menu test" name="should check Products of Companies  " time="0.148" />
+  <testcase classname="Header menu test" name="should check Our Companies Procurement" time="0.117" />
+  <testcase classname="Header menu test" name="should check Our Companies Careers" time="0.177" />
+  <testcase classname="Header menu test" name="should check Our Companies Investors" time="0.165" />
+  <testcase classname="Header menu test" name="should check Our Companies Societal" time="0.15">
+   <failure type="exception" message="Failed: No element found using locator: By(link text, Our Societal Impact)"><![CDATA[NoSuchElementError: No element found using locator: By(link text, Our Societal Impact)
+    at elementArrayFinder.getWebElements.then (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\built\element.js:814:27)
+    at ManagedPromise.invokeCallback_ (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at asyncRun (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+    at D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+    at ElementArrayFinder.applyAction_ (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as getId] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.(anonymous function).args [as getId] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\built\element.js:831:22)
+    at ActionSequence.mouseMove (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\selenium-webdriver\lib\actions.js:151:44)
+    at headerMenu._callee2$ (D:/EPAM/JnJ/JibeAutomation02/ForAutomation/objects/components/headerMenu.js:59:33)
+    at tryCatch (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:303:22)
+    at Generator.prototype.(anonymous function) [as next] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\objects\components\headerMenu.js:3:191)
+    at D:\EPAM\JnJ\JibeAutomation02\ForAutomation\objects\components\headerMenu.js:3:437
+From: Task: Run it("should check Our Companies Societal") in control flow
+    at UserContext.<anonymous> (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\jasminewd2\index.js:94:19)
+    at attempt (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (D:/EPAM/JnJ/JibeAutomation02/ForAutomation/tests/suites/headerMenuTests.js:69:5)
+    at addSpecsToSuite (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (D:/EPAM/JnJ/JibeAutomation02/ForAutomation/tests/suites/headerMenuTests.js:6:1)
+    at Module._compile (module.js:652:30)
+    at loader (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-register\lib\node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (D:\EPAM\JnJ\JibeAutomation02\ForAutomation\node_modules\babel-register\lib\node.js:154:7)
+    at Module.load (module.js:565:32)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>

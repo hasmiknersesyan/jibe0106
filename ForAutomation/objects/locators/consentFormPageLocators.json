@@ -1,0 +1,19 @@
+{
+  "pageElement": {
+    "lblConsentHeader": "//h1[@class='privacy-header-title']",
+    "lblInformationYouProvide": "//strong[contains(text(), 'Information You Provide')]",
+    "lblPassiveInformation": "//strong[contains(text(), 'Passive Information Collection and Use')]",
+    "lblThroughBrowser": "//strong[contains(text(), 'Through your browser:')]",
+    "lblUsingCookies": "//strong[contains(text(), 'Using cookies:')]",
+    "lblUsingFlashCookies": "//strong[contains(text(), 'Using Flash cookies')]",
+    "lblUsingPixel": "//strong[contains(text(), 'Using pixel tags, web beacons, ')]",
+    "lblOnlineAdv": "//strong[contains(text(), 'Online behavioral advertising:')]",
+
+    "applyButton": "//*[@id='link-apply']",
+    "fieldAlertEmail": "//*[@id='jibe-trackif-email']",
+    "getAlertButton": "//*[@id='jibe-trackif-button']",
+    "emailAlertErrorMessage": "//*[@id='jibe-trackif-error-noemail']",
+    "alertSuccessMessage": "//*[@id='jibe-trackif-success-process']",
+    "agreeButton": "//button[contains(text(), 'Agree')]"
+  }
+}

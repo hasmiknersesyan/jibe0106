@@ -1,0 +1,10 @@
+{
+  "txtConsentPart2": "Consent Form",
+  "lblInformationYouProvide": "Information You Provide",
+  "lblPassiveInformation": "Passive Information Collection and Use",
+  "lblThroughBrowser": "Through your browser:",
+  "lblUsingCookies": "Using cookies:",
+  "lblUsingFlashCookies": "Using Flash cookies",
+  "lblUsingPixel": "Using pixel tags, web beacons, clear GIFs, or other similar technologies:",
+  "lblOnlineAdv": "Online behavioral advertising:"
+}

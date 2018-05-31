@@ -1,0 +1,10 @@
+{
+  "pageElement": {
+    "loginEmail": "//input[@placeholder='Email']",
+    "loginPassword": "//input[@placeholder='Password']",
+    "loginButton": "//button[@type='submit']",
+    "labelLogin": "//h1[text()='Login']",
+    "labelUploadCV": "//div/upload-component/div[1]/h2",
+    "loginErrorMessage": "//p[contains(text(), 'Please enter a valid email address.')]"
+  }
+}
