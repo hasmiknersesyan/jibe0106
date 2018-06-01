@@ -10,6 +10,8 @@ const config = require('../../config/config.js'),
     positionDetailsPage = require('../../objects/PageObjects/positionDetailsPage.js'),
     consentFormPage = require('../../objects/PageObjects/consentFormPage.js'),
     uploadResumePage = require('../../objects/PageObjects/uploadResumePage.js'),
+    attachCoverLetterPage = require('../../objects/PageObjects/attachCoverLetterPage.js'),
+    personalInfoPage = require('../../objects/PageObjects/personalInfoPage.js'),
     loginPage = require('../../objects/PageObjects/loginPage.js'),
     using = require('jasmine-data-provider');
 
@@ -27,7 +29,7 @@ describe('careers jnj automation sctipts', function () {
     });
 
     it('should verify position search', async function () {
-        await indexPage.enterSearchPosition("Project Manager");
+        await indexPage.enterSearchPosition("Manager");
         await indexPage.clickSearch();
         expect(await indexPage.resultPosition.isDisplayed()).toBe(true, 'check result position not displayed');
     });
@@ -111,5 +113,10 @@ describe('careers jnj automation sctipts', function () {
         await uploadResumePage.clickUploadButton();
         expect(await uploadResumePage.btnNext.isDisplayed()).toBeTruthy('check btnNext displayed');
         await uploadResumePage.clickNextdButton();
+    });
+
+    it('should check the Select From Prev Resume', async function () {  
+        await attachCoverLetterPage.clickRadioButton('No');
+        await attachCoverLetterPage.clickNextButton();
     });
 });

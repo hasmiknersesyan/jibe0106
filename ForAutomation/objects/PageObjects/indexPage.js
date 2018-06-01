@@ -16,7 +16,7 @@ let IndexPage = function(){
     this.lblSearchLocation = element(by.id('label-location-search'));
     this.lblSortBy = element(by.xpath("//*[@id='search-sort']/label"));
     this.searchButton = element(by.css('.search-btn'));    
-    this.resultPositionlList = element.all(by.xpath("//a/span[contains(text(),'Project')]"));
+    this.resultPositionlList = element.all(by.xpath("//a/span[contains(text(),'Manager')]"));
     this.resultPosition = this.resultPositionlList.get(1);
 
     this.openURL = async function() {
