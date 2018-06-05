@@ -12,6 +12,7 @@ const config = require('../../config/config.js'),
     uploadResumePage = require('../../objects/PageObjects/uploadResumePage.js'),
     attachCoverLetterPage = require('../../objects/PageObjects/attachCoverLetterPage.js'),
     personalInfoPage = require('../../objects/PageObjects/personalInfoPage.js'),
+    personalAddressPage = require('../../objects/PageObjects/personalAddressPage.js'),
     loginPage = require('../../objects/PageObjects/loginPage.js'),
     using = require('jasmine-data-provider');
 
@@ -96,27 +97,41 @@ describe('careers jnj automation sctipts', function () {
     //     });
     // });
 
-    it('should check uploadResume page', async function () {
+    it('should login and check uploadResume page', async function () {
         await loginPage.enterEmail(config.config.loginEmailValue);
         await loginPage.enterPassword(config.config.loginPasswordValue);
         await loginPage.clickLoginButton('positive');
-        expect(await uploadResumePage.lbluploadResume.isDisplayed()).toBeTruthy('UploadYourResume displayed');
-        expect(await uploadResumePage.lblUploadOptions.isDisplayed()).toBeTruthy('UploadOptions displayed');
-        expect(await uploadResumePage.lblUsePrevUploadedResume.isDisplayed()).toBeTruthy('UsePrevUploadedResume displayed');
-        expect(await uploadResumePage.selectFromPrevResumeButton.isDisplayed()).toBeTruthy('check selectPreviewsResume button displayed');
-        expect(await uploadResumePage.lblUploadResumeUsingOtherOptions.isDisplayed()).toBeTruthy('UploadResumeUsingOtherOptions displayed');
+        // expect(await uploadResumePage.lbluploadResume.isDisplayed()).toBeTruthy('UploadYourResume displayed');
+        // expect(await uploadResumePage.lblUploadOptions.isDisplayed()).toBeTruthy('UploadOptions displayed');
+        // expect(await uploadResumePage.lblUsePrevUploadedResume.isDisplayed()).toBeTruthy('UsePrevUploadedResume displayed');
+        // expect(await uploadResumePage.selectFromPrevResumeButton.isDisplayed()).toBeTruthy('check selectPreviewsResume button displayed');
+        // expect(await uploadResumePage.lblUploadResumeUsingOtherOptions.isDisplayed()).toBeTruthy('UploadResumeUsingOtherOptions displayed');
 
     });
 
-    it('should check the Select From Prev Resume', async function () {
+    xit('should check the Select From Prev Resume', async function () {
         await uploadResumePage.clickSelectFromPrevResumeButton();
         await uploadResumePage.clickUploadButton();
         expect(await uploadResumePage.btnNext.isDisplayed()).toBeTruthy('check btnNext displayed');
         await uploadResumePage.clickNextdButton();
     });
 
-    it('should check the Select From Prev Resume', async function () {  
+    xit('should check the cover letter page', async function () {
         await attachCoverLetterPage.clickRadioButton('No');
         await attachCoverLetterPage.clickNextButton();
+    });
+
+    xit('should check the personal information page', async function () {
+        await personalInfoPage.sendInputKeys(personalInfoPage.inputFirstName, 'Hasmik');
+        await personalInfoPage.sendInputKeys(personalInfoPage.inputLastName, 'Nersesyan');
+        await personalInfoPage.clickNextButton();
+    });
+
+    it('should check the personal information page', async function () {
+        await personalAddressPage.sendInputKeys(personalAddressPage.inputStreet, 'Lvov');
+        await personalAddressPage.sendInputKeys(personalAddressPage.inputCity, 'Yerevan');
+        await personalAddressPage.sendInputKeys(personalAddressPage.inputZip, '11111');
+        await personalAddressPage.selectElement(personalAddressPage.selCountry, personalAddressPage.countryList, personalAddressPage.ctyJapan);
+        // await personalInfoPage.clickNextButton();
     });
 });

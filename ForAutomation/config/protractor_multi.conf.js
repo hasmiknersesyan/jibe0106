@@ -16,9 +16,9 @@ let folder = 'v.' + packageInfo.version;
 const path = require('path'),
     fs = require('fs'),
     // URL = require('./constants/url.json'),
-    BROWSERS = require('./confDataSource/browsers.json'),
+    // BROWSERS = require('./confDataSource/browsers.json'),
     // config = require(path.join(process.cwd(), 'helpers', 'config_lib')),
-    seleniumServerJar = require('selenium-server-standalone-jar'),
+    // seleniumServerJar = require('selenium-server-standalone-jar'),
     Q = require('q'),
     argv = require('yargs')
         .options({
@@ -54,9 +54,9 @@ exports.config = {
         let getMultiCapabilitiesInBrowserstack = () => {
             return [
                 {
-                    'seleniumAddress': 'http://test15823:VJ5eEppGxSiUpygsouTG@hub-cloud.browserstack.com/wd/hub',
-                    'browserstack.user': 'test15823',
-                    'browserstack.key': 'VJ5eEppGxSiUpygsouTG',
+                    'seleniumAddress': 'http://hasmiknersesyan2:rypfdSx89yiVq2qCYvLm@hub-cloud.browserstack.com/wd/hub',
+                    'browserstack.user': 'hasmiknersesyan2',
+                    'browserstack.key': 'rypfdSx89yiVq2qCYvLm',
                     'browserName': 'firefox',
                     'platform': 'WINDOWS',
 
@@ -74,9 +74,9 @@ exports.config = {
                     'browserstack.video': true
                 },
                 {
-                    'seleniumAddress': 'http://test15823:VJ5eEppGxSiUpygsouTG@hub-cloud.browserstack.com/wd/hub',
-                    'browserstack.user': 'test15823',
-                    'browserstack.key': 'VJ5eEppGxSiUpygsouTG',                   
+                    'seleniumAddress': 'http://hasmiknersesyan2:rypfdSx89yiVq2qCYvLm@hub-cloud.browserstack.com/wd/hub',
+                    'browserstack.user': 'hasmiknersesyan2',
+                    'browserstack.key': 'rypfdSx89yiVq2qCYvLm',                
                     'platform': 'WINDOWS',
 
                     //to run multiple threads
@@ -95,9 +95,9 @@ exports.config = {
                     'resolution': '1024x768'
                 },
                 {
-                    'seleniumAddress': 'http://test15823:VJ5eEppGxSiUpygsouTG@hub-cloud.browserstack.com/wd/hub',
-                    'browserstack.user': 'test15823',
-                    'browserstack.key': 'VJ5eEppGxSiUpygsouTG',
+                    'seleniumAddress': 'http://hasmiknersesyan2:rypfdSx89yiVq2qCYvLm@hub-cloud.browserstack.com/wd/hub',
+                    'browserstack.user': 'hasmiknersesyan2',
+                    'browserstack.key': 'rypfdSx89yiVq2qCYvLm',
                     'browserName': 'chrome',
                     'platform': 'WINDOWS',
 

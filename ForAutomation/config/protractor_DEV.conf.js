@@ -102,9 +102,9 @@ exports.config = {
         //run in browserstack env
         let gc_browserstack = () => {
             return {
-                'seleniumAddress': 'http://test15823:VJ5eEppGxSiUpygsouTG@hub-cloud.browserstack.com/wd/hub',
-                'browserstack.user': 'test15823',
-                'browserstack.key': 'VJ5eEppGxSiUpygsouTG',
+                'seleniumAddress': 'http://hasmiknersesyan2:rypfdSx89yiVq2qCYvLm@hub-cloud.browserstack.com/wd/hub',
+                'browserstack.user': 'hasmiknersesyan2',
+                'browserstack.key': 'rypfdSx89yiVq2qCYvLm',
                 'browserName': 'chrome',
                 'platform': 'WINDOWS'
                 // 'browserstack.local': true,                
@@ -113,9 +113,9 @@ exports.config = {
 
         let ff_browserstack = () => {
             return {
-                'seleniumAddress': 'http://test15823:VJ5eEppGxSiUpygsouTG@hub-cloud.browserstack.com/wd/hub',
-                'browserstack.user': 'test15823',
-                'browserstack.key': 'VJ5eEppGxSiUpygsouTG',
+                'seleniumAddress': 'http://hasmiknersesyan2:rypfdSx89yiVq2qCYvLm@hub-cloud.browserstack.com/wd/hub',
+                'browserstack.user': 'hasmiknersesyan2',
+                'browserstack.key': 'rypfdSx89yiVq2qCYvLm',
                 'browserName': 'firefox',
                 'platform': 'WINDOWS'
             }
@@ -123,9 +123,9 @@ exports.config = {
 
         let ie_browserstack = () => {
             return {
-                'seleniumAddress': 'http://test15823:VJ5eEppGxSiUpygsouTG@hub-cloud.browserstack.com/wd/hub',
-                'browserstack.user': 'test15823',
-                'browserstack.key': 'VJ5eEppGxSiUpygsouTG',
+                'seleniumAddress': 'http://hasmiknersesyan2:rypfdSx89yiVq2qCYvLm@hub-cloud.browserstack.com/wd/hub',
+                'browserstack.user': 'hasmiknersesyan2',
+                'browserstack.key': 'rypfdSx89yiVq2qCYvLm',
                 'browserName': 'internet explorer',
                 'platform': 'WINDOWS'
             };

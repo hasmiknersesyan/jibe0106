@@ -31,7 +31,8 @@ let LoginPage = function () {
             await browser.wait(EC.visibilityOf(this.loginErrorMessage), config.config.regularTimeout)
         } else if (validationType === 'positive') {
             await browser.sleep(config.config.regularTimeout);
-            await browser.wait(EC.visibilityOf(uploadResumePage.lbluploadResume), config.config.regularTimeout, 'waits for lbluploadResume')
+            await browser.sleep(3000); // then to remove this and uncomment the browserWait
+            // await browser.wait(EC.visibilityOf(uploadResumePage.lbluploadResume), config.config.regularTimeout, 'waits for lbluploadResume')
         }
     };
 };
