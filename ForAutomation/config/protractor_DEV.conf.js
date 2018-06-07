@@ -174,7 +174,7 @@ exports.config = {
         }
     })(),
 
-    suites: { 'test': '../tests/suites/*.js' },
+    suites: { 'test': '../tests/suites/applyJobTests.js' },
 
     frameworks: ['jasmine2'],
     jasmineNodeOpts: {
