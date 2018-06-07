@@ -22,14 +22,20 @@ let  personalAddressPage = function () {
     
     this.selState = element(by.xpath("//mat-select[@id='mat-select-2']"));
     this.stateAkita = element(by.xpath("//mat-option/span[text()='Akita-Ken']"));
-    
+
+    this.selArea = element(by.xpath("//mat-select[@id='mat-select-3']"));
+    this.areaHanda = element(by.xpath("//mat-option/span[text()='Handa']"));
+
     this.sendInputKeys = async function(el, text) {
         await browser.wait(EC.visibilityOf(this.inputStreet), config.config.regularTimeout, 'waits for personalInfoPage');   
         await el.clear().sendKeys(text);        
     };
 
     //selectElement(selCountry, countryList, ctyJapan);
-    this.selectElement = async function(dropdownEl, elToBeSelected) {   
+    this.selectElement = async function(dropdownEl, elToBeSelected) {  
+        if(dropdownEl === this.selArea){
+            await browser.executeScript('window.scrollTo(0,10000)');
+        } 
         await dropdownEl.click();
         await browser.sleep(5000);       
         // await browser.wait(EC.visibilityOf(listEl), config.config.regularTimeout, 'waits for elList');

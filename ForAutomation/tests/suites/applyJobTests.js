@@ -133,6 +133,7 @@ describe('careers jnj automation sctipts', function () {
         await personalAddressPage.sendInputKeys(personalAddressPage.inputZip, '11111');
         await personalAddressPage.selectElement(personalAddressPage.selCountry, personalAddressPage.ctyJapan);
         await personalAddressPage.selectElement(personalAddressPage.selState, personalAddressPage.stateAkita);
+        await personalAddressPage.selectElement(personalAddressPage.selArea, personalAddressPage.areaHanda);
         
         // await personalInfoPage.clickNextButton();
     });
