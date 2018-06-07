@@ -2,7 +2,9 @@
 
 const config = require('../../config/config.js'),
     lpl = require("../locators/loginPageLocators.json"),    
+    personalElAddressPage = require("./personalElAddressPage.js"),    
     EC = protractor.ExpectedConditions;
+    personalElAddressPage
 
 require("babel-core/register");
 require("babel-polyfill");
@@ -24,7 +26,7 @@ let  personalAddressPage = function () {
     this.stateAkita = element(by.xpath("//mat-option/span[text()='Akita-Ken']"));
 
     this.selArea = element(by.xpath("//mat-select[@id='mat-select-3']"));
-    this.areaHanda = element(by.xpath("//mat-option/span[text()='Handa']"));
+    this.areaDaisen = element(by.xpath("//mat-option/span[text()='Daisen']"));
 
     this.sendInputKeys = async function(el, text) {
         await browser.wait(EC.visibilityOf(this.inputStreet), config.config.regularTimeout, 'waits for personalInfoPage');   
@@ -32,10 +34,8 @@ let  personalAddressPage = function () {
     };
 
     //selectElement(selCountry, countryList, ctyJapan);
-    this.selectElement = async function(dropdownEl, elToBeSelected) {  
-        if(dropdownEl === this.selArea){
-            await browser.executeScript('window.scrollTo(0,10000)');
-        } 
+    this.selectElement = async function(dropdownEl, elToBeSelected) {     
+        await browser.wait(EC.visibilityOf(dropdownEl), config.config.regularTimeout, 'waits for elList');
         await dropdownEl.click();
         await browser.sleep(5000);       
         // await browser.wait(EC.visibilityOf(listEl), config.config.regularTimeout, 'waits for elList');
@@ -44,7 +44,7 @@ let  personalAddressPage = function () {
 
     this.clickNextButton = async function () {       
         await this.btnNext.click(); 
-        // await browser.wait(EC.visibilityOf(personalInfoPage.lblFirstName), config.config.regularTimeout, 'waits for personalInfoPage');              
+        await browser.wait(EC.visibilityOf(personalElAddressPage.inputPhone), config.config.regularTimeout, 'waits for personalInfoPage');              
     };
 
 };

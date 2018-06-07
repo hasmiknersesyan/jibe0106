@@ -13,6 +13,7 @@ const config = require('../../config/config.js'),
     attachCoverLetterPage = require('../../objects/PageObjects/attachCoverLetterPage.js'),
     personalInfoPage = require('../../objects/PageObjects/personalInfoPage.js'),
     personalAddressPage = require('../../objects/PageObjects/personalAddressPage.js'),
+    personalElAddressPage = require('../../objects/PageObjects/personalElAddressPage.js'),  
     loginPage = require('../../objects/PageObjects/loginPage.js'),
     using = require('jasmine-data-provider');
 
@@ -127,14 +128,22 @@ describe('careers jnj automation sctipts', function () {
         await personalInfoPage.clickNextButton();
     });
 
-    it('should check the personal information page', async function () {
+    xit('should check the personal information page', async function () {
         await personalAddressPage.sendInputKeys(personalAddressPage.inputStreet, 'Lvov');
         await personalAddressPage.sendInputKeys(personalAddressPage.inputCity, 'Yerevan');
         await personalAddressPage.sendInputKeys(personalAddressPage.inputZip, '11111');
         await personalAddressPage.selectElement(personalAddressPage.selCountry, personalAddressPage.ctyJapan);
         await personalAddressPage.selectElement(personalAddressPage.selState, personalAddressPage.stateAkita);
-        await personalAddressPage.selectElement(personalAddressPage.selArea, personalAddressPage.areaHanda);
+        await browser.executeScript('window.scrollTo(0, 20000)');
+        await personalAddressPage.selectElement(personalAddressPage.selArea, personalAddressPage.areaDaisen);        
+        await personalInfoPage.clickNextButton();
+    });
+
+    it('should check the Email and Phone', async function () {
+        await personalElAddressPage.sendInputKeys(personalElAddressPage.inputPhone, '1231231234');
+        await personalElAddressPage.sendInputKeys(personalElAddressPage.inputEmail, 'hasmik_nersesyan@epam.com');    
         
-        // await personalInfoPage.clickNextButton();
+       
+        await personalInfoPage.clickNextButton();
     });
 });

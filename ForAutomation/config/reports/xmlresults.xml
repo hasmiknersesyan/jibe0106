@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="2" tests="13" time="91.73">
- <testsuite name="careers jnj automation sctipts" timestamp="2018-06-07T14:31:16" hostname="localhost" time="91.73" errors="0" tests="13" skipped="6" disabled="0" failures="2">
-  <testcase classname="careers jnj automation sctipts" name="index page UI elements checks" time="7.699" />
-  <testcase classname="careers jnj automation sctipts" name="should verify position search" time="9.267" />
+<testsuites disabled="0" errors="0" failures="1" tests="14" time="83.65">
+ <testsuite name="careers jnj automation sctipts" timestamp="2018-06-07T17:06:35" hostname="localhost" time="83.65" errors="0" tests="14" skipped="7" disabled="0" failures="1">
+  <testcase classname="careers jnj automation sctipts" name="index page UI elements checks" time="7.501" />
+  <testcase classname="careers jnj automation sctipts" name="should verify position search" time="9.078" />
   <testcase classname="careers jnj automation sctipts" name="should verify location search" time="0">
    <skipped message="Temporarily disabled with xit" />
   </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should verify position details page" time="12.044" />
-  <testcase classname="careers jnj automation sctipts" name="position details page UI elements checks" time="0">
+  <testcase classname="careers jnj automation sctipts" name="should verify position details page" time="10.753" />
+  <testcase classname="careers jnj automation sctipts" name="position details page UI elements checks" time="0.001">
    <skipped message="Temporarily disabled with xit" />
   </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should verify get_alert_field positive validation" time="9.766">
-   <failure type="exception" message="Failed: Wait timed out after 5128ms"><![CDATA[TimeoutError: Wait timed out after 5128ms
+  <testcase classname="careers jnj automation sctipts" name="should verify get_alert_field positive validation" time="6.733" />
+  <testcase classname="careers jnj automation sctipts" name="should verify position Details Page Apply button" time="0">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="careers jnj automation sctipts" name="should verify login Page " time="9.044" />
+  <testcase classname="careers jnj automation sctipts" name="should login and check uploadResume page" time="13.974" />
+  <testcase classname="careers jnj automation sctipts" name="should check the Select From Prev Resume" time="0.001">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="careers jnj automation sctipts" name="should check the cover letter page" time="0">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="careers jnj automation sctipts" name="should check the personal information page" time="0">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="careers jnj automation sctipts" name="should check the personal information page" time="0.003">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="careers jnj automation sctipts" name="should check the Email and Phone" time="11.726">
+   <failure type="exception" message="Failed: waits for personalAddressPage
+Wait timed out after 5094ms"><![CDATA[TimeoutError: waits for personalAddressPage
+Wait timed out after 5094ms
     at C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2201:17
     at ManagedPromise.invokeCallback_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
     at TaskQueue.execute_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
@@ -20,18 +40,18 @@
     at C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
-From: Task: <anonymous wait>
+From: Task: waits for personalAddressPage
     at scheduleWait (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2188:20)
     at ControlFlow.wait (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2517:12)
     at thenableWebDriverProxy.wait (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:934:29)
     at run (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\browser.js:59:33)
     at ProtractorBrowser.to.(anonymous function) [as wait] (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
-    at PositionDetailsPage._callee2$ (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\positionDetailsPage.js:60:44)
+    at personalIndoPage._callee2$ (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\personalInfoPage.js:52:40)
     at tryCatch (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:65:40)
     at Generator.invoke [as _invoke] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:303:22)
     at Generator.prototype.(anonymous function) [as next] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:117:21)
-    at step (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\positionDetailsPage.js:3:191)
-From: Task: Run it("should verify get_alert_field positive validation") in control flow
+    at step (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\personalInfoPage.js:3:191)
+From: Task: Run it("should check the Email and Phone") in control flow
     at UserContext.<anonymous> (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
     at attempt (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
     at QueueRunner.run (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
@@ -44,69 +64,11 @@ From: Task: Run it("should verify get_alert_field positive validation") in contr
     at runNext (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
 From asynchronous test: 
 Error
-    at Suite.<anonymous> (C:\JibeAutomation_own\jibe0106\ForAutomation\tests\suites\applyJobTests.js:229:5)
+    at Suite.<anonymous> (C:\JibeAutomation_own\jibe0106\ForAutomation\tests\suites\applyJobTests.js:524:5)
     at addSpecsToSuite (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
     at Env.describe (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
     at describe (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
-    at Object.<anonymous> (C:\JibeAutomation_own\jibe0106\ForAutomation\tests\suites\applyJobTests.js:21:1)
-    at Module._compile (module.js:652:30)
-    at loader (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-register\lib\node.js:144:5)
-    at Object.require.extensions.(anonymous function) [as .js] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-register\lib\node.js:154:7)
-    at Module.load (module.js:565:32)]]>
-   </failure>
-  </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should verify position Details Page Apply button" time="0.004">
-   <skipped message="Temporarily disabled with xit" />
-  </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should verify login Page " time="12.161" />
-  <testcase classname="careers jnj automation sctipts" name="should login and check uploadResume page" time="14.365" />
-  <testcase classname="careers jnj automation sctipts" name="should check the Select From Prev Resume" time="0.002">
-   <skipped message="Temporarily disabled with xit" />
-  </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should check the cover letter page" time="0">
-   <skipped message="Temporarily disabled with xit" />
-  </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should check the personal information page" time="0.002">
-   <skipped message="Temporarily disabled with xit" />
-  </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should check the personal information page" time="11.973">
-   <failure type="exception" message="Failed: No element found using locator: By(xpath, //mat-option/span[text()=&apos;Japan&apos;])"><![CDATA[NoSuchElementError: No element found using locator: By(xpath, //mat-option/span[text()='Japan'])
-    at elementArrayFinder.getWebElements.then (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
-    at ManagedPromise.invokeCallback_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
-    at TaskQueue.execute_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at asyncRun (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
-    at C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)Error
-    at ElementArrayFinder.applyAction_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
-    at ElementArrayFinder.(anonymous function).args [as click] (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
-    at ElementFinder.(anonymous function).args [as click] (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
-    at personalAddressPage._callee2$ (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\personalAddressPage.js:82:51)
-    at tryCatch (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:65:40)
-    at Generator.invoke [as _invoke] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:303:22)
-    at Generator.prototype.(anonymous function) [as next] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:117:21)
-    at step (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\personalAddressPage.js:3:191)
-    at C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\personalAddressPage.js:3:361
-    at <anonymous>
-From: Task: Run it("should check the personal information page") in control flow
-    at UserContext.<anonymous> (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
-    at attempt (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
-    at QueueRunner.run (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
-    at QueueRunner.execute (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
-    at Spec.queueRunnerFactory (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
-    at Spec.execute (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
-    at UserContext.fn (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
-    at attempt (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
-    at QueueRunner.run (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
-    at runNext (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
-From asynchronous test: 
-Error
-    at Suite.<anonymous> (C:\JibeAutomation_own\jibe0106\ForAutomation\tests\suites\applyJobTests.js:479:5)
-    at addSpecsToSuite (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
-    at Env.describe (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
-    at describe (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
-    at Object.<anonymous> (C:\JibeAutomation_own\jibe0106\ForAutomation\tests\suites\applyJobTests.js:21:1)
+    at Object.<anonymous> (C:\JibeAutomation_own\jibe0106\ForAutomation\tests\suites\applyJobTests.js:22:1)
     at Module._compile (module.js:652:30)
     at loader (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-register\lib\node.js:144:5)
     at Object.require.extensions.(anonymous function) [as .js] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-register\lib\node.js:154:7)
