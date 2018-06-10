@@ -35,7 +35,7 @@ let PositionDetailsPage = function() {
         // await browser.wait(EC.visibilityOf(this.imgElement), config.config.regularTimeout);
         await browser.executeScript('window.scrollTo(0,8000)');
         await this.applyButton.click();
-        await browser.wait(EC.visibilityOf(consentFormPage.lblInformationYouProvide), config.config.regularTimeout);
+        await browser.wait(EC.visibilityOf(consentFormPage.lblConsentHeader), config.config.regularTimeout);
         // await browser.executeScript('window.scrollTo(0,20000)');
     };
 };

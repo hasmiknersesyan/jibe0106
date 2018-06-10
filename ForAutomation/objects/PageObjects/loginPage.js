@@ -10,10 +10,10 @@ require("babel-polyfill");
 
 let LoginPage = function () {
     //page element locators
-    this.loginEmail = element(by.xpath("//input[@placeholder='Email']"));
+    this.loginEmail = element(by.xpath("//input[@formcontrolname='email']"));
     this.labelLogin = element(by.xpath("//h1[text()='Login']"));
-    this.loginPassword = element(by.xpath("//input[@placeholder='Password']"));
-    this.loginButton = element(by.xpath("//button[@type='submit']"));
+    this.loginPassword = element(by.xpath("//input[@type='password']"));
+    this.loginButton = element(by.xpath("//button[text()='Log In']"));
     this.loginErrorMessage = element(by.xpath("//p[contains(text(), 'Please enter a valid email address.')]"));
 
     this.enterEmail = async function (email) {

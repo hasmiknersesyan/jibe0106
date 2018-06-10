@@ -110,25 +110,25 @@ describe('careers jnj automation sctipts', function () {
 
     });
 
-    xit('should check the Select From Prev Resume', async function () {
+    it('should check the Select From Prev Resume', async function () {
         await uploadResumePage.clickSelectFromPrevResumeButton();
         await uploadResumePage.clickUploadButton();
         expect(await uploadResumePage.btnNext.isDisplayed()).toBeTruthy('check btnNext displayed');
         await uploadResumePage.clickNextdButton();
     });
 
-    xit('should check the cover letter page', async function () {
+    it('should check the cover letter page', async function () {
         await attachCoverLetterPage.clickRadioButton('No');
         await attachCoverLetterPage.clickNextButton();
     });
 
-    xit('should check the personal information page', async function () {
+    it('should check the personal information page', async function () {
         await personalInfoPage.sendInputKeys(personalInfoPage.inputFirstName, 'Hasmik');
         await personalInfoPage.sendInputKeys(personalInfoPage.inputLastName, 'Nersesyan');
         await personalInfoPage.clickNextButton();
     });
 
-    xit('should check the personal information page', async function () {
+    it('should check the personal information page', async function () {
         await personalAddressPage.sendInputKeys(personalAddressPage.inputStreet, 'Lvov');
         await personalAddressPage.sendInputKeys(personalAddressPage.inputCity, 'Yerevan');
         await personalAddressPage.sendInputKeys(personalAddressPage.inputZip, '11111');
