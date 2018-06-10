@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="9" tests="15" time="190.388">
- <testsuite name="careers jnj automation sctipts" timestamp="2018-06-11T00:59:08" hostname="localhost" time="190.388" errors="0" tests="15" skipped="3" disabled="0" failures="9">
-  <testcase classname="careers jnj automation sctipts" name="index page UI elements checks" time="18.098" />
-  <testcase classname="careers jnj automation sctipts" name="should verify position search" time="23.154" />
+<testsuites disabled="0" errors="0" failures="8" tests="15" time="185.785">
+ <testsuite name="careers jnj automation sctipts" timestamp="2018-06-11T01:17:08" hostname="localhost" time="185.785" errors="0" tests="15" skipped="3" disabled="0" failures="8">
+  <testcase classname="careers jnj automation sctipts" name="index page UI elements checks" time="9.376" />
+  <testcase classname="careers jnj automation sctipts" name="should verify position search" time="13.831" />
   <testcase classname="careers jnj automation sctipts" name="should verify location search" time="0">
    <skipped message="Temporarily disabled with xit" />
   </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should verify position details page" time="41.179">
-   <failure type="exception" message="Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."><![CDATA[Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.
-    at Timeout._onTimeout (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4281:23)
-    at ontimeout (timers.js:482:11)
-    at tryOnTimeout (timers.js:317:5)
-    at Timer.listOnTimeout (timers.js:277:5)]]>
-   </failure>
-  </testcase>
+  <testcase classname="careers jnj automation sctipts" name="should verify position details page" time="17.011" />
   <testcase classname="careers jnj automation sctipts" name="position details page UI elements checks" time="0">
    <skipped message="Temporarily disabled with xit" />
   </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should verify get_alert_field positive validation" time="27.403" />
+  <testcase classname="careers jnj automation sctipts" name="should verify get_alert_field positive validation" time="12.851" />
   <testcase classname="careers jnj automation sctipts" name="should verify position Details Page Apply button" time="0">
    <skipped message="Temporarily disabled with xit" />
   </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should verify login Page " time="11.52">
-   <failure type="exception" message="Failed: Wait timed out after 5153ms"><![CDATA[TimeoutError: Wait timed out after 5153ms
+  <testcase classname="careers jnj automation sctipts" name="should verify login Page " time="15.872">
+   <failure type="exception" message="Failed: Wait timed out after 5045ms"><![CDATA[TimeoutError: Wait timed out after 5045ms
     at C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2201:17
     at ManagedPromise.invokeCallback_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
     at TaskQueue.execute_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
@@ -66,64 +59,11 @@ Error
     at Module.load (module.js:565:32)]]>
    </failure>
   </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should login and check uploadResume page" time="1.563">
-   <failure type="exception" message="Failed: No element found using locator: By(xpath, //input[@formcontrolname=&apos;email&apos;])"><![CDATA[NoSuchElementError: No element found using locator: By(xpath, //input[@formcontrolname='email'])
-    at elementArrayFinder.getWebElements.then (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
-    at ManagedPromise.invokeCallback_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
-    at TaskQueue.execute_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at asyncRun (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
-    at C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)Error
-    at ElementArrayFinder.applyAction_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
-    at ElementArrayFinder.(anonymous function).args [as clear] (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
-    at ElementFinder.(anonymous function).args [as clear] (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
-    at LoginPage._callee$ (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\loginPage.js:28:52)
-    at tryCatch (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:65:40)
-    at Generator.invoke [as _invoke] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:303:22)
-    at Generator.prototype.(anonymous function) [as next] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:117:21)
-    at step (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\loginPage.js:3:191)
-    at C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\loginPage.js:3:437
-    at new Promise (<anonymous>)Error
-    at ElementArrayFinder.applyAction_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
-    at ElementArrayFinder.(anonymous function).args [as sendKeys] (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
-    at ElementFinder.(anonymous function).args [as sendKeys] (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
-    at LoginPage._callee$ (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\loginPage.js:28:60)
-    at tryCatch (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:65:40)
-    at Generator.invoke [as _invoke] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:303:22)
-    at Generator.prototype.(anonymous function) [as next] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:117:21)
-    at step (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\loginPage.js:3:191)
-    at C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\loginPage.js:3:437
-    at new Promise (<anonymous>)
-From: Task: Run it("should login and check uploadResume page") in control flow
-    at UserContext.<anonymous> (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
-    at attempt (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
-    at QueueRunner.run (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
-    at QueueRunner.execute (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
-    at Spec.queueRunnerFactory (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
-    at Spec.execute (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
-    at UserContext.fn (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
-    at attempt (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
-    at QueueRunner.run (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
-    at runNext (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
-From asynchronous test: 
-Error
-    at Suite.<anonymous> (C:\JibeAutomation_own\jibe0106\ForAutomation\tests\suites\applyJobTests.js:375:5)
-    at addSpecsToSuite (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
-    at Env.describe (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
-    at describe (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
-    at Object.<anonymous> (C:\JibeAutomation_own\jibe0106\ForAutomation\tests\suites\applyJobTests.js:23:1)
-    at Module._compile (module.js:652:30)
-    at loader (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-register\lib\node.js:144:5)
-    at Object.require.extensions.(anonymous function) [as .js] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-register\lib\node.js:154:7)
-    at Module.load (module.js:565:32)]]>
-   </failure>
-  </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should check the Select From Prev Resume" time="6.248">
+  <testcase classname="careers jnj automation sctipts" name="should login and check uploadResume page" time="22.25" />
+  <testcase classname="careers jnj automation sctipts" name="should check the Select From Prev Resume" time="7.104">
    <failure type="exception" message="Failed: waits for selectFromPrevResumeButton
-Wait timed out after 5069ms"><![CDATA[TimeoutError: waits for selectFromPrevResumeButton
-Wait timed out after 5069ms
+Wait timed out after 7084ms"><![CDATA[TimeoutError: waits for selectFromPrevResumeButton
+Wait timed out after 7084ms
     at C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2201:17
     at ManagedPromise.invokeCallback_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
     at TaskQueue.execute_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
@@ -167,10 +107,10 @@ Error
     at Module.load (module.js:565:32)]]>
    </failure>
   </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should check the cover letter page" time="6.114">
+  <testcase classname="careers jnj automation sctipts" name="should check the cover letter page" time="7.307">
    <failure type="exception" message="Failed: waits for lblattachLetter
-Wait timed out after 5055ms"><![CDATA[TimeoutError: waits for lblattachLetter
-Wait timed out after 5055ms
+Wait timed out after 5323ms"><![CDATA[TimeoutError: waits for lblattachLetter
+Wait timed out after 5323ms
     at C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2201:17
     at ManagedPromise.invokeCallback_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
     at TaskQueue.execute_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
@@ -214,7 +154,7 @@ Error
     at Module.load (module.js:565:32)]]>
    </failure>
   </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should check the personal information page" time="2.274">
+  <testcase classname="careers jnj automation sctipts" name="should check the personal information page" time="1.393">
    <failure type="exception" message="Failed: No element found using locator: By(xpath, //div[@class=&apos;mat-form-field-infix&apos;]/input[@placeholder=&apos;First Name&apos;])"><![CDATA[NoSuchElementError: No element found using locator: By(xpath, //div[@class='mat-form-field-infix']/input[@placeholder='First Name'])
     at elementArrayFinder.getWebElements.then (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\element.js:814:27)
     at ManagedPromise.invokeCallback_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
@@ -268,10 +208,10 @@ Error
     at Module.load (module.js:565:32)]]>
    </failure>
   </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should check the personal information page" time="6.345">
+  <testcase classname="careers jnj automation sctipts" name="should check the personal information page" time="7.456">
    <failure type="exception" message="Failed: waits for personalInfoPage
-Wait timed out after 5030ms"><![CDATA[TimeoutError: waits for personalInfoPage
-Wait timed out after 5030ms
+Wait timed out after 6643ms"><![CDATA[TimeoutError: waits for personalInfoPage
+Wait timed out after 6643ms
     at C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2201:17
     at ManagedPromise.invokeCallback_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
     at TaskQueue.execute_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
@@ -315,10 +255,16 @@ Error
     at Module.load (module.js:565:32)]]>
    </failure>
   </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should check the Email and Phone" time="6.635">
-   <failure type="exception" message="Failed: waits for personalInfoPage
-Wait timed out after 5213ms"><![CDATA[TimeoutError: waits for personalInfoPage
-Wait timed out after 5213ms
+  <testcase classname="careers jnj automation sctipts" name="should check the Email and Phone" time="52.168">
+   <failure type="exception" message="Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."><![CDATA[Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.
+    at Timeout._onTimeout (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4281:23)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)]]>
+   </failure>
+   <failure type="exception" message="Failed: waits for personalAddressPage
+Wait timed out after 22841ms"><![CDATA[TimeoutError: waits for personalAddressPage
+Wait timed out after 22841ms
     at C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2201:17
     at ManagedPromise.invokeCallback_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
     at TaskQueue.execute_ (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
@@ -327,17 +273,17 @@ Wait timed out after 5213ms
     at C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
-From: Task: waits for personalInfoPage
+From: Task: waits for personalAddressPage
     at scheduleWait (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2188:20)
     at ControlFlow.wait (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2517:12)
     at thenableWebDriverProxy.wait (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:934:29)
     at run (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\browser.js:59:33)
     at ProtractorBrowser.to.(anonymous function) [as wait] (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\built\browser.js:67:16)
-    at personalElAddressPage._callee$ (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\personalElAddressPage.js:24:44)
+    at personalIndoPage._callee2$ (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\personalInfoPage.js:52:40)
     at tryCatch (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:65:40)
     at Generator.invoke [as _invoke] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:303:22)
     at Generator.prototype.(anonymous function) [as next] (C:\JibeAutomation_own\jibe0106\ForAutomation\node_modules\babel-polyfill\node_modules\regenerator-runtime\runtime.js:117:21)
-    at step (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\personalElAddressPage.js:3:191)
+    at step (C:\JibeAutomation_own\jibe0106\ForAutomation\objects\PageObjects\personalInfoPage.js:3:191)
 From: Task: Run it("should check the Email and Phone") in control flow
     at UserContext.<anonymous> (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
     at attempt (C:\Users\vahan.bakaryan\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
@@ -362,7 +308,7 @@ Error
     at Module.load (module.js:565:32)]]>
    </failure>
   </testcase>
-  <testcase classname="careers jnj automation sctipts" name="should check if user has ever been JnJ employee" time="17.01">
+  <testcase classname="careers jnj automation sctipts" name="should check if user has ever been JnJ employee" time="2.094">
    <failure type="exception" message="Failed: invalid selector: Unable to locate an element with the xpath expression //div[@class = &apos;mat-radio-label-content&apos;][contains(text(), &apos;Yes&apos;)]] because of the following error:
 SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//div[@class = &apos;mat-radio-label-content&apos;][contains(text(), &apos;Yes&apos;)]]&apos; is not a valid XPath expression.
   (Session info: chrome=67.0.3396.62)
