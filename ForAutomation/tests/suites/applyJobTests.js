@@ -13,7 +13,8 @@ const config = require('../../config/config.js'),
     attachCoverLetterPage = require('../../objects/PageObjects/attachCoverLetterPage.js'),
     personalInfoPage = require('../../objects/PageObjects/personalInfoPage.js'),
     personalAddressPage = require('../../objects/PageObjects/personalAddressPage.js'),
-    personalElAddressPage = require('../../objects/PageObjects/personalElAddressPage.js'),  
+    personalElAddressPage = require('../../objects/PageObjects/personalElAddressPage.js'),
+    haveYoubeenJnJEmplyeePage = require('../../objects/PageObjects/haveYoubeenJnJEmplyeePage.js'),  
     loginPage = require('../../objects/PageObjects/loginPage.js'),
     using = require('jasmine-data-provider');
 
@@ -141,9 +142,12 @@ describe('careers jnj automation sctipts', function () {
 
     it('should check the Email and Phone', async function () {
         await personalElAddressPage.sendInputKeys(personalElAddressPage.inputPhone, '1231231234');
-        await personalElAddressPage.sendInputKeys(personalElAddressPage.inputEmail, 'hasmik_nersesyan@epam.com');    
-        
-       
+        await personalElAddressPage.sendInputKeys(personalElAddressPage.inputEmail, 'hasmik_nersesyan@epam.com');         
         await personalInfoPage.clickNextButton();
+    });
+
+    it('should check if user has ever been JnJ employee', async function () {
+        await haveYoubeenJnJEmplyeePage.clickRadioButton('No');
+        await haveYoubeenJnJEmplyeePage.clickNextButton();
     });
 });
