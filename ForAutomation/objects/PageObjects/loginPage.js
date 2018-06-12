@@ -11,7 +11,7 @@ require("babel-polyfill");
 let LoginPage = function () {
     //page element locators
     this.loginEmail = element(by.xpath("//input[@formcontrolname='email']"));
-    this.labelLogin = element(by.xpath("//h1[text()='Login']"));
+    this.labelLogin = element(by.xpath("//ojl-login-component[@class='ng-star-inserted']/div/h1"));
     this.loginPassword = element(by.xpath("//input[@type='password']"));
     this.loginButton = element(by.xpath("//button[text()='Log In']"));
     this.loginErrorMessage = element(by.xpath("//p[contains(text(), 'Please enter a valid email address.')]"));

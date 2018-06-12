@@ -16,12 +16,9 @@ let legallyWorkPage = function () {
     this.btnNext = element(by.xpath("//span[contains(text(), 'Next')]"));
 
     this.clickRadioButton = async function (rb) {
-        await browser.wait(EC.visibilityOf(this.rbYes), config.config.regularTimeout, 'waits for jnj emplyee question page loads');
-        if (rb === 'Yes') {
-            await this.rbYes.click();
-        } else if (rb === 'No') {
-            await this.rbNo.click();
-        }
+        await browser.wait(EC.visibilityOf(rb), config.config.regularTimeout, 'waits for jnj emplyee question page loads');      
+        await this.rbYes.click(rb);
+       
     };
 
     this.clickNextButton = async function () {

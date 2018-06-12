@@ -15,6 +15,8 @@ const config = require('../../config/config.js'),
     personalAddressPage = require('../../objects/PageObjects/personalAddressPage.js'),
     personalElAddressPage = require('../../objects/PageObjects/personalElAddressPage.js'),
     haveYoubeenJnJEmplyeePage = require('../../objects/PageObjects/haveYoubeenJnJEmplyeePage.js'),  
+    jobSpecificQuestionsPage_1 = require('../../objects/PageObjects/jobSpecificQuestionsPage_1.js'),  
+    jobSpecificQuestionsPage_2 = require('../../objects/PageObjects/jobSpecificQuestionsPage_2.js'),  
     loginPage = require('../../objects/PageObjects/loginPage.js'),
     using = require('jasmine-data-provider');
 
@@ -32,7 +34,7 @@ describe('careers jnj automation sctipts', function () {
     });
 
     it('should verify position search', async function () {
-        await indexPage.enterSearchPosition("Manager");
+        await indexPage.enterSearchPosition("Project Manager");
         await indexPage.clickSearch();
         expect(await indexPage.resultPosition.isDisplayed()).toBe(true, 'check result position not displayed');
     });
@@ -83,9 +85,9 @@ describe('careers jnj automation sctipts', function () {
         expect(await consentFormPage.lblOnlineAdv.getText()).toBe(labelsConsentForm.lblOnlineAdv, 'check lblOnlineAdv');
     });
 
-    it('should verify login Page ', async function () {
+    it('should apply for position Deatils', async function () {
         await positionDetailsPage.clickApplyButton();
-        await consentFormPage.clickAgreeButton();
+        // await consentFormPage.clickAgreeButton();
         expect(await loginPage.labelLogin.getText()).toBe(labelsLogin.lblLogin);
     });
 
@@ -99,7 +101,7 @@ describe('careers jnj automation sctipts', function () {
     //     });
     // });
 
-    it('should login and check uploadResume page', async function () {
+    it('should login', async function () {
         await loginPage.enterEmail(config.config.loginEmailValue);
         await loginPage.enterPassword(config.config.loginPasswordValue);
         await loginPage.clickLoginButton('positive');
@@ -111,25 +113,25 @@ describe('careers jnj automation sctipts', function () {
 
     });
 
-    it('should check the Select From Prev Resume', async function () {
+    xit('should check the Select From Prev Resume', async function () {
         await uploadResumePage.clickSelectFromPrevResumeButton();
         await uploadResumePage.clickUploadButton();
         expect(await uploadResumePage.btnNext.isDisplayed()).toBeTruthy('check btnNext displayed');
         await uploadResumePage.clickNextdButton();
     });
 
-    it('should check the cover letter page', async function () {
+    xit('should check the cover letter page', async function () {
         await attachCoverLetterPage.clickRadioButton('No');
         await attachCoverLetterPage.clickNextButton();
     });
 
-    it('should check the personal information page', async function () {
+    xit('should check the personal information page', async function () {
         await personalInfoPage.sendInputKeys(personalInfoPage.inputFirstName, 'Hasmik');
         await personalInfoPage.sendInputKeys(personalInfoPage.inputLastName, 'Nersesyan');
         await personalInfoPage.clickNextButton();
     });
 
-    it('should check the personal information page', async function () {
+    xit('should check the personal address data input forms', async function () {
         await personalAddressPage.sendInputKeys(personalAddressPage.inputStreet, 'Lvov');
         await personalAddressPage.sendInputKeys(personalAddressPage.inputCity, 'Yerevan');
         await personalAddressPage.sendInputKeys(personalAddressPage.inputZip, '11111');
@@ -140,14 +142,29 @@ describe('careers jnj automation sctipts', function () {
         await personalInfoPage.clickNextButton();
     });
 
-    it('should check the Email and Phone', async function () {
+    xit('should check the Email and Phone', async function () {
         await personalElAddressPage.sendInputKeys(personalElAddressPage.inputPhone, '1231231234');
         await personalElAddressPage.sendInputKeys(personalElAddressPage.inputEmail, 'hasmik_nersesyan@epam.com');         
         await personalInfoPage.clickNextButton();
     });
 
-    it('should check if user has ever been JnJ employee', async function () {
-        await haveYoubeenJnJEmplyeePage.clickRadioButton('No');
+    xit('should check if user has ever been JnJ employee', async function () {
+        await haveYoubeenJnJEmplyeePage.clickRadioButton(haveYoubeenJnJEmplyeePage.rbNo);
         await haveYoubeenJnJEmplyeePage.clickNextButton();
+    });
+
+    xit('should check job specific questions_1', async function () {
+        await jobSpecificQuestionsPage_1.clickRadioButton(jobSpecificQuestionsPage_1.rbPhysicianNo);
+        await jobSpecificQuestionsPage_1.selectElement(jobSpecificQuestionsPage_1.ddEducation, jobSpecificQuestionsPage_1.itemEducation);
+        await jobSpecificQuestionsPage_1.clickRadioButton(jobSpecificQuestionsPage_1.rbAuthorizedNo);
+        await jobSpecificQuestionsPage_1.clickNextButton();
+    });
+
+    it('should check job specific questions_2', async function () {
+        await jobSpecificQuestionsPage_2.clickRadioButton(jobSpecificQuestionsPage_2.rbSponsorshipNo);
+        await jobSpecificQuestionsPage_2.clickRadioButton(jobSpecificQuestionsPage_2.rbDegreeNo);
+        await jobSpecificQuestionsPage_2.clickRadioButton(jobSpecificQuestionsPage_2.rbExperienceNo);
+        await browser.sleep(5000);
+        await jobSpecificQuestionsPage_2.clickNextButton();
     });
 });
